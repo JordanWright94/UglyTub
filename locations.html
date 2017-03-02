@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bath Magic Inc: Locations</title>
+		<link rel="stylesheet" href ="css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type='text/css'/>
+		
+		<!--Javacript Files required for embedded Google Map. Tutorial Sourced From:
+		https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+		<script type="text/javascript" src="js/loadmap.js"></script>
+	</head>
+	<body>
+		<div id ="container">
+			<div id = "header">
+				<div>
+					<a href="index.html"> <img id="logo" src="images/logo.png" alt="Bath Magic" /> </a>
+					<form method="post" id="searchbar">
+						<input type="text" name="search" id="search" placeholder="Search"/>
+					</form>
+				</div>
+				<div id = "navigation">
+					<div id ="navwrap">
+						<ul>
+							<li> <a href= "#"> Fix My Tub </a> 
+								<ul>
+									<li> <a href= "finishes.html"> Finishes </a> </li>
+									<li> <a href= "colours.html"> Colours </a> </li>
+									<li> <a href= "care_instructions.html"> Care Instructions </a> </li>
+								</ul>
+							</li>
+							<li> <a href= "#"> Products </a> 
+								<ul>
+									<li> <a href= "touch_up_kits.html">Touch Up Kits</a> </li>
+									<li> <a href= "anti_slip_mats.html">Anti Slip Mats</a> </li>
+									<li> <a href= "drain_kits.html">Drain Kits</a> </li>
+								</ul>
+							</li>
+							<li> <a href="#"> About Us </a> 
+								<ul>
+									<li> <a href= "the_process.html">The Process</a> </li>
+									<li> <a href= "locations.html">Locations</a> </li>
+									<li> <a href= "faq.html">FAQs</a> </li>
+									<li> <a href="business_partners.html">Business Partners</a> </li>
+								</ul>
+							</li>
+							<li> <a href= "#"> Contact Us </a> 
+								<ul>
+									<li> <a href= "contact_us.html">Contact Us</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+						<p>
+							<a href="index.html" >Home</a>
+							>> 
+							<a href="locations.html">Locations</a>
+						</p>
+				</div>
+			</div>
+			<div id="content">
+				<h1> Locations</h1>
+				<div id = "map">
+					<div id = "map-canvas"></div>
+				</div>
+				<div id = "locationlist">
+					<div id = "locationlistwrap">
+						<ul>
+							<li> <a href= "#">CINCINNATI ,OH</a> 
+									<ul>
+										<li><a href= "#">Addyston</a></li>
+										<li><a href= "#">Amelia</a></li>
+										<li><a href= "#">Aurora, IN</a></li>
+										<li><a href= "#">Batavia</a></li>
+										<li><a href= "#">Berlington</a></li>
+										<li><a href= "#">California</a></li>
+										<li><a href= "#">Cheviot</a></li>
+										<li><a href= "#">Cincinnati</a></li>
+										<li><a href= "#">Cleves</a></li>
+										<li><a href= "#">College Hill</a></li>
+										<li><a href= "#">Covington</a></li>
+										<li><a href= "#">Deer Park</a></li>
+										<li><a href= "#">Delhi</a></li>
+										<li><a href= "#">Erlanger</a></li>
+										<li><a href= "#">Fairfax</a></li>
+										<li><a href= "#">Fairfield</a></li>
+										<li><a href= "#">Florence Yall</a></li>
+										<li><a href= "#">Forest Park</a></li>
+										<li><a href= "#">Fort. Mitchell</a></li>
+										<li><a href= "#">Fort. Wright</a></li>
+										<li><a href= "#">Glendale</a></li>
+										<li><a href= "#">Golf Manor</a></li>
+										<li><a href= "#">Goshen</a></li>
+										<li><a href= "#">Greenhills</a></li>
+										<li><a href= "#">Hamilton</a></li>
+										<li><a href= "#">Harrison</a></li>
+										<li><a href= "#">Harrison, IN</a></li>
+										<li><a href= "#">Hebron</a></li>
+										<li><a href= "#">Hooven</a></li>
+										<li><a href= "#">Indian Hill</a></li>
+										<li><a href= "#">Latonia</a></li>
+										<li><a href= "#">Lawrenceburg</a></li>
+										<li><a href= "#">Lebanon</a></li>
+										<li><a href= "#">Loveland</a></li>
+										<li><a href= "#">Ludlow</a></li>
+										<li><a href= "#">Maiemont</a></li>
+										<li><a href= "#">Mainville</a></li>
+										<li><a href= "#">Mason</a></li>
+										<li><a href= "#">Maderia</a></li>
+										<li><a href= "#">Miamistown</a></li>
+										<li><a href= "#">Middletown</a></li>
+										<li><a href= "#">Milford</a></li>
+										<li><a href= "#">Monroe</a></li>
+										<li><a href= "#">Montgomery</a></li>
+										<li><a href= "#">Mount Healthy</a></li>
+										<li><a href= "#">Newport</a></li>
+										<li><a href= "#">Newtown</a></li>
+										<li><a href= "#">North Bend</a></li>
+										<li><a href= "#">Norwood</a></li>
+										<li><a href= "#">Price Hill</a></li>
+										<li><a href= "#">Sharonville</a></li>
+										<li><a href= "#">Springdale</a></li>
+										<li><a href= "#">St. Bernard</a></li>
+										<li><a href= "#">Terrace Park</a></li>
+										<li><a href= "#">Trenton</a></li>
+										<li><a href= "#">Westchester</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">COLUMBUS, OH</a>
+									<ul>
+										<li><a href= "#">Bexley</a></li>
+										<li><a href= "#">Canal Winchester</a></li>
+										<li><a href= "#">Clintonville</a></li>
+										<li><a href= "#">Columbus</a></li>
+										<li><a href= "#">Delaware</a></li>
+										<li><a href= "#">Dublin</a></li>
+										<li><a href= "#">Gahanna</a></li>
+										<li><a href= "#">Galena</a></li>
+										<li><a href= "#">Galloway</a></li>
+										<li><a href= "#">Grandview Heights</a></li>
+										<li><a href= "#">Grove City</a></li>
+										<li><a href= "#">Groveport</a></li>
+										<li><a href= "#">Hillard</a></li>
+										<li><a href= "#">Lockbourne</a></li>
+										<li><a href= "#">Marysville</a></li>
+										<li><a href= "#">New Albany</a></li>
+										<li><a href= "#">New Rome</a></li>
+										<li><a href= "#">Obetz</a></li>
+										<li><a href= "#">Orient</a></li>
+										<li><a href= "#">Pataskla</a></li>
+										<li><a href= "#">Pikerington</a></li>
+										<li><a href= "#">Plain City</a></li>
+										<li><a href= "#">Powell</a></li>
+										<li><a href= "#">Reynoldsburg</a></li>
+										<li><a href= "#">Summit Station</a></li>
+										<li><a href= "#">Upper Arlington</a></li>
+										<li><a href= "#">West Jefferson</a></li>
+										<li><a href= "#">Westerville</a></li>
+										<li><a href= "#">Whitehall</a></li>
+										<li><a href= "#">Worthington</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">DAYTON, OH</a>
+									<ul>
+										<li><a href= "#">Arcanum</a></li>
+										<li><a href= "#">Beavercreek</a></li>
+										<li><a href= "#">Bradford</a></li>
+										<li><a href= "#">Brookville</a></li>
+										<li><a href= "#">Cedarville</a></li>
+										<li><a href= "#">Centerville</a></li>
+										<li><a href= "#">Clayton</a></li>
+										<li><a href= "#">Dayton</a></li>
+										<li><a href= "#">Donaldsville</a></li>
+										<li><a href= "#">Drexel</a></li>
+										<li><a href= "#">Eaton</a></li>
+										<li><a href= "#">Englewood</a></li>
+										<li><a href= "#">Enon</a></li>
+										<li><a href= "#">Fairborn</a></li>
+										<li><a href= "#">Farmersville</a></li>
+										<li><a href= "#">Franklin</a></li>
+										<li><a href= "#">Germantown</a></li>
+										<li><a href= "#">Gratis</a></li>
+										<li><a href= "#">Greenville</a></li>
+										<li><a href= "#">Huber Heights</a></li>
+										<li><a href= "#">Jamestown</a></li>
+										<li><a href= "#">Kettering</a></li>
+										<li><a href= "#">Laura</a></li>
+										<li><a href= "#">Lewisburg</a></li>
+										<li><a href= "#">Medway</a></li>
+										<li><a href= "#">Miamisburg</a></li>
+										<li><a href= "#">Moraine</a></li>
+										<li><a href= "#">New Carlisle</a></li>
+										<li><a href= "#">New Lebanon</a></li>
+										<li><a href= "#">Northridge</a></li>
+										<li><a href= "#">Oakwood</a></li>
+										<li><a href= "#">Phillipsburg</a></li>
+										<li><a href= "#">Piqua</a></li>
+										<li><a href= "#">Potsdam</a></li>
+										<li><a href= "#">Riverside</a></li>
+										<li><a href= "#">Spring Valley</a></li>
+										<li><a href= "#">Springboro</a></li>
+										<li><a href= "#">Springfield</a></li>
+										<li><a href= "#">Tipp City</a></li>
+										<li><a href= "#">Trotwood</a></li>
+										<li><a href= "#">Troy</a></li>
+										<li><a href= "#">Union</a></li>
+										<li><a href= "#">Vandalia</a></li>
+										<li><a href= "#">Verona</a></li>
+										<li><a href= "#">Versailles</a></li>
+										<li><a href= "#">Waynesville</a></li>
+										<li><a href= "#">West Alexandria</a></li>
+										<li><a href= "#">West Carrollton</a></li>
+										<li><a href= "#">West Milton</a></li>
+										<li><a href= "#">Wilberforce</a></li>
+										<li><a href= "#">WPAFB</a></li>
+										<li><a href= "#">Xenia</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">DETROIT, MI</a>
+									<ul>
+										<li><a href= "#">Allen Park</a></li>
+										<li><a href= "#">Belleville</a></li>
+										<li><a href= "#">Berkley</a></li>
+										<li><a href= "#">Beverly Hills</a></li>
+										<li><a href= "#">Birmingham</a></li>
+										<li><a href= "#">Bloomfield</a></li>
+										<li><a href= "#">Canton</a></li>
+										<li><a href= "#">Centerline</a></li>
+										<li><a href= "#">Clawson</a></li>
+										<li><a href= "#">Clinton Township</a></li>
+										<li><a href= "#">Dearborn</a></li>
+										<li><a href= "#">Dearborn Heights</a></li>
+										<li><a href= "#">Detroit</a></li>
+										<li><a href= "#">Ecourse</a></li>
+										<li><a href= "#">Farmington</a></li>
+										<li><a href= "#">Farmington Hills</a></li>
+										<li><a href= "#">Oak Park</a></li>
+										<li><a href= "#">Pleasant Ridge</a></li>
+										<li><a href= "#">Plymouth</a></li>
+										<li><a href= "#">Redford</a></li>
+										<li><a href= "#">River Rouge</a></li>
+										<li><a href= "#">Rochester Hills</a></li>
+										<li><a href= "#">Romulas</a></li>
+										<li><a href= "#">Roseville</a></li>
+										<li><a href= "#">Royal Oak</a></li>
+										<li><a href= "#">Southfield</a></li>
+										<li><a href= "#">Southgate</a></li>
+										<li><a href= "#">Sterling Heights</a></li>
+										<li><a href= "#">St. Claire Shores</a></li>
+										<li><a href= "#">Taylor</a></li>
+										<li><a href= "#">Trenton</a></li>
+										<li><a href= "#">Troy</a></li>
+										<li><a href= "#">Warren</a></li>
+										<li><a href= "#">Wayne</a></li>
+										<li><a href= "#">Westland</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">INDIANAPOLIS, IN</a>
+									<ul>
+										<li><a href= "#">Anderson</a></li>
+										<li><a href= "#">Avon</a></li>
+										<li><a href= "#">Beech Grove</a></li>
+										<li><a href= "#">Brooklyn</a></li>
+										<li><a href= "#">Brownsburg</a></li>
+										<li><a href= "#">Camby</a></li>
+										<li><a href= "#">Carmel</a></li>
+										<li><a href= "#">Castleton</a></li>
+										<li><a href= "#">Cicero</a></li>
+										<li><a href= "#">Clayton</a></li>
+										<li><a href= "#">Danville</a></li>
+										<li><a href= "#">Edinburgh</a></li>
+										<li><a href= "#">Fishers</a></li>
+										<li><a href= "#">Fairland</a></li>
+										<li><a href= "#">Greenfield</a></li>
+										<li><a href= "#">Greenwood</a></li>
+										<li><a href= "#">Indianapolis</a></li>
+										<li><a href= "#">Lawrence</a></li>
+										<li><a href= "#">Lebanon</a></li>
+										<li><a href= "#">Martinsville</a></li>
+										<li><a href= "#">McCordsville</a></li>
+										<li><a href= "#">Mooresville</a></li>
+										<li><a href= "#">New Palestine</a></li>
+										<li><a href= "#">Noblesville</a></li>
+										<li><a href= "#">North Salem</a></li>
+										<li><a href= "#">Plainfield</a></li>
+										<li><a href= "#">Ranklin</a></li>
+										<li><a href= "#">Shelbyville</a></li>
+										<li><a href= "#">Tipton</a></li>
+										<li><a href= "#">Trafalger</a></li>
+										<li><a href= "#">Westfield</a></li>
+										<li><a href= "#">Whitestown</a></li>
+										<li><a href= "#">Zionsville</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">LOUISVILLE, KY</a>
+									<ul>
+										<li><a href= "#">Bradenburg</a></li>
+										<li><a href= "#">Charlestown</a></li>
+										<li><a href= "#">Clarksville, IN</a></li>
+										<li><a href= "#">Corydon</a></li>
+										<li><a href= "#">Crestwood</a></li>
+										<li><a href= "#">Eminence-Henry, CO</a></li>
+										<li><a href= "#">Fairdale</a></li>
+										<li><a href= "#">Fern Creek</a></li>
+										<li><a href= "#">Glennview</a></li>
+										<li><a href= "#">Goshen, IN</a></li>
+										<li><a href= "#">Henryville, IN</a></li>
+										<li><a href= "#">Jefferson Township</a></li>
+										<li><a href= "#">Jeffersonville, IN</a></li>
+										<li><a href= "#">LaGrange</a></li>
+										<li><a href= "#">Louisville</a></li>
+										<li><a href= "#">Lyndon</a></li>
+										<li><a href= "#">Mount. Eden</a></li>
+										<li><a href= "#">Mount. Washington</a></li>
+										<li><a href= "#">New Albany, IN</a></li>
+										<li><a href= "#">Okalona</a></li>
+										<li><a href= "#">Otisco</a></li>
+										<li><a href= "#">Palmyra, IN</a></li>
+										<li><a href= "#">Pee Wee Valley</a></li>
+										<li><a href= "#">Poplar Hills</a></li>
+										<li><a href= "#">Prospect</a></li>
+										<li><a href= "#">Salem, IN</a></li>
+										<li><a href= "#">Shelbyville</a></li>
+										<li><a href= "#">Shepardsville</a></li>
+										<li><a href= "#">Shively</a></li>
+										<li><a href= "#">St. Mattews</a></li>
+										<li><a href= "#">Taylorsville</a></li>
+										<li><a href= "#">Valley Station</a></li>
+										<li><a href= "#">West Point</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">MADISON, WI</a>
+									<ul>
+										<li><a href= "#">Altoona</a></li>
+										<li><a href= "#">Belleville</a></li>
+										<li><a href= "#">Black Earth</a></li>
+										<li><a href= "#">Columbus</a></li>
+										<li><a href= "#">Cottage Grove</a></li>
+										<li><a href= "#">Cross Plaines</a></li>
+										<li><a href= "#">Deforest</a></li>
+										<li><a href= "#">Edgerton</a></li>
+										<li><a href= "#">Fitchburg</a></li>
+										<li><a href= "#">Hudson</a></li>
+										<li><a href= "#">Mazomanie</a></li>
+										<li><a href= "#">McFarland</a></li>
+										<li><a href= "#">Middleton</a></li>
+										<li><a href= "#">Monona</a></li>
+										<li><a href= "#">Mount. Horeb</a></li>
+										<li><a href= "#">Oregon</a></li>
+										<li><a href= "#">Pardeeville</a></li>
+										<li><a href= "#">Stoughton</a></li>
+										<li><a href= "#">Sun Prairie</a></li>
+										<li><a href= "#">Verona</a></li>
+										<li><a href= "#">Waunakee</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">ROCKFORD, IL</a>
+									<ul>
+										<li><a href= "#">Rockford</a></li>
+										<li><a href= "#">Beloit</a></li>
+										<li><a href= "#">Belvidere</a></li>
+										<li><a href= "#">Byron</a></li>
+										<li><a href= "#">Caledonia</a></li>
+										<li><a href= "#">Capron</a></li>
+										<li><a href= "#">Cherry Valley</a></li>
+										<li><a href= "#">Davis</a></li>
+										<li><a href= "#">Durand</a></li>
+										<li><a href= "#">Freeport</a></li>
+										<li><a href= "#">Genoa</a></li>
+										<li><a href= "#">Glendale Heights</a></li>
+										<li><a href= "#">Harvard</a></li>
+										<li><a href= "#">Loves Park</a></li>
+										<li><a href= "#">Machesney Park</a></li>
+										<li><a href= "#">Marengo</a></li>
+										<li><a href= "#">Monroe Center</a></li>
+										<li><a href= "#">Mount. Morris</a></li>
+										<li><a href= "#">Rockton</a></li>
+										<li><a href= "#">Oregon</a></li>
+										<li><a href= "#">Pecatonia</a></li>
+										<li><a href= "#">Poplar Grove</a></li>
+										<li><a href= "#">Rochelle</a></li>
+										<li><a href= "#">Roscoe</a></li>
+										<li><a href= "#">Stillman Valley</a></li>
+									</ul>
+							</li>
+							<li> <a href= "#">TOLEDO, OH</a>
+									<ul>
+										<li><a href= "#">Adrian, MI</a></li>
+										<li><a href= "#">Berkley</a></li>
+										<li><a href= "#">Blissfield, MI</a></li>
+										<li><a href= "#">Bowling Green</a></li>
+										<li><a href= "#">Curtis</a></li>
+										<li><a href= "#">Deerfield, MI</a></li>
+										<li><a href= "#">Delta</a></li>
+										<li><a href= "#">Dowling</a></li>
+										<li><a href= "#">Dunbridge</a></li>
+										<li><a href= "#">Elmore</a></li>
+										<li><a href= "#">Erie, MI</a></li>
+										<li><a href= "#">Frankfort</a></li>
+										<li><a href= "#">Geneo</a></li>
+										<li><a href= "#">Grand Rapids</a></li>
+										<li><a href= "#">Harbour View</a></li>
+										<li><a href= "#">Haskins</a></li>
+										<li><a href= "#">Holland</a></li>
+										<li><a href= "#">Lambertville, MI</a></li>
+										<li><a href= "#">LaSalle, MI</a></li>
+										<li><a href= "#">Lemoyna</a></li>
+										<li><a href= "#">Liberty Center</a></li>
+										<li><a href= "#">Maumee</a></li>
+										<li><a href= "#">Metamora</a></li>
+										<li><a href= "#">Milbury</a></li>
+										<li><a href= "#">Monclova</a></li>
+										<li><a href= "#">Northwood</a></li>
+										<li><a href= "#">Oak Harbour</a></li>
+										<li><a href= "#">Oregon</a></li>
+										<li><a href= "#">Ottawa</a></li>
+										<li><a href= "#">Perrysberg</a></li>
+										<li><a href= "#">Peterburg, MI</a></li>
+										<li><a href= "#">Port Clinton</a></li>
+										<li><a href= "#">Richfield Center</a></li>
+										<li><a href= "#">Riga, MI</a></li>
+										<li><a href= "#">Rossford</a></li>
+										<li><a href= "#">Stoney Ridge</a></li>
+										<li><a href= "#">Swanton</a></li>
+										<li><a href= "#">Sylvania</a></li>
+										<li><a href= "#">Temperance, MI</a></li>
+										<li><a href= "#">Toledo</a></li>
+										<li><a href= "#">Tontogany</a></li>
+										<li><a href= "#">Waterville</a></li>
+										<li><a href= "#">Weston</a></li>
+										<li><a href= "#">Whitehouse</a></li>
+									</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id = "styling"></div>
+			</div>
+			<div id = "footer">
+				<ul id="footernav">
+					<li> <a href= "index.html">Home</a> </li>
+					|
+					<li> <a href= "finishes.html">Finishes</a> </li>
+					|
+					<li> <a href= "colours.html">Colours</a> </li>
+					|
+					<li> <a href= "the_process.html">The Process</a> </li>
+					|
+					<li> <a href= "care_instructions.html">Care Instructions</a> </li>
+					|
+					<li> <a href= "touch_up_kits.html">Touch Up Kits</a> </li>
+					|
+					<li> <a href= "anti_slip_mats.html">Anti Slip Mats</a> </li>
+					|
+					<li> <a href= "drain_kits.html">Drain Kits</a> </li>
+					|
+					<li> <a href= "locations.html">Locations</a> </li>
+					|
+					<li> <a href= "faq.html">FAQs</a> </li>
+					|
+					<li> <a href= "contact_us.html">Contact Us</a> </li>
+					|
+					<li> <a href="business_partners.html">Business Partners</a> </li>
+					|
+					<li> <a href="site_map.html">Site Map</a> </li>
+				</ul>
+				<div id = "footerinfo">
+					<div class = "copyright">
+						<br><br><br>
+						<p> &#169; Copyright 2015 Bath Magic Inc. All Rights Reserved </p>
+					</div>
+					<div class = "lastmod">
+						<br><br><br>
+						<p>Last Modified: 14 June 2015</p>
+					</div>
+					<div class = "address">
+						<p> Corporate Headquarters <br> 
+						120 N. Main St. <br> 
+						Englewood, OH 45322 <br> 
+						Phone: (937) 832-0427 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

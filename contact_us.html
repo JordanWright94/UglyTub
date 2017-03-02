@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bath Magic Inc: Contact Us</title>
+		<link rel="stylesheet" href ="css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type='text/css'/>
+		<script type="text/javascript" src="js/formvalidator.js"></script>
+	</head>
+	<body>
+		<div id ="container">
+			<div id = "header">
+				<div>
+					<a href="index.html"> <img id="logo" src="images/logo.png" alt="Bath Magic" /> </a>
+					<form method="post" id="searchbar">
+						<input type="text" name="search" id="search" placeholder="Search"/>
+					</form>
+				</div>
+				<div id = "navigation">
+					<div id ="navwrap">
+						<ul>
+							<li> <a href= "#"> Fix My Tub </a> 
+								<ul>
+									<li> <a href= "finishes.html"> Finishes </a> </li>
+									<li> <a href= "colours.html"> Colours </a> </li>
+									<li> <a href= "care_instructions.html"> Care Instructions </a> </li>
+								</ul>
+							</li>
+							<li> <a href= "#"> Products </a> 
+								<ul>
+									<li> <a href= "touch_up_kits.html">Touch Up Kits</a> </li>
+									<li> <a href= "anti_slip_mats.html">Anti Slip Mats</a> </li>
+									<li> <a href= "drain_kits.html">Drain Kits</a> </li>
+								</ul>
+							</li>
+							<li> <a href="#"> About Us </a> 
+								<ul>
+									<li> <a href= "the_process.html">The Process</a> </li>
+									<li> <a href= "locations.html">Locations</a> </li>
+									<li> <a href= "faq.html">FAQs</a> </li>
+									<li> <a href="business_partners.html">Business Partners</a> </li>
+								</ul>
+							</li>
+							<li> <a href= "#"> Contact Us </a> 
+								<ul>
+									<li> <a href= "contact_us.html">Contact Us</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+						<p>
+							<a href="index.html" >Home</a>
+							>> 
+							<a href="contact_us.html">Contact Us</a>
+						</p>
+				</div>
+			</div>
+			<div id="content">
+				<h1> Contact Us </h1>
+				<p> Contact Bath Magic, Inc. via phone or email! <br> Email: service@uglytub.com <br> Phone: (937)832-0427 </p> 
+				<p> See below for contact details for your local area</p>
+				<ul id = "phonelist">
+					<li>CINCINNATI:		(513) 771-TUBS</li>
+					<li>COLUMBUS:		(614) 224-BATH</li>
+					<li>DAYTON:			(937) 832-0427</li>
+					<li>DETROIT:		(313) 396-5340</li>
+					<li>INDIANAPOLIS:	(317) 791-TUBS</li>
+					<li>LOUISVILLE:		(502) 584-9436 </li>
+					<li>MADISON:		(608) 257-7370</li>
+					<li>ROCKFORD:		(815) 227-5257</li>
+					<li>TOLEDO:			(419) 241-8070</li>
+				</ul>
+				<p> Or fill out the form below! </p>
+				<form method="post" class="form" name= "contact_form" onsubmit = "return validateContactForm()" action="form_submitted.html" > 
+					<p> 
+						<label for="cname">Company Name</label> <p class="error" id="eName">Please enter your name!</p><input type="text" name="cname" id="cname" placeholder="Company Name" />	
+					</p>
+					<p>
+						<label for="textarea">Email Address</label><p class="error" id="eEmail">Please enter your email address!</p> <input type="text" id="email" rows="1" cols="30" placeholder="e.g. service@uglytub.com"  />
+					</p>
+					<p>
+						<label for="number">Phone Number</label><p class="error" id="ePhone">Please enter your phone number!</p> <input type="text" name="phone_number" id="phonenumber" placeholder="e.g. (937) 832-0427"  />
+					</p>
+					<p>
+						<label for="citystate" id="citystate">City and State</label><p class="error" id="eCity">Please enter your city and state!</p> <input type="text" name="city_and_state" id="city_and_state" placeholder="e.g. Detroit, Michigan" />
+					</p>
+					<p>
+						<label for="textarea"> Your Message </label> <p class="error" id="eMessage">Please enter your message!</p><textarea rows="20" cols="50" placeholder="Your message here" id="yourmessage"></textarea> 
+					</p>
+					<input id="submit" type="submit" value="Submit" name="submit"> <!-- Value specifies the text that will appear on the button -->
+				</form>
+			</div>
+			<div id = "footer">
+				<ul id="footernav">
+					<li> <a href= "index.html">Home</a> </li>
+					|
+					<li> <a href= "finishes.html">Finishes</a> </li>
+					|
+					<li> <a href= "colours.html">Colours</a> </li>
+					|
+					<li> <a href= "the_process.html">The Process</a> </li>
+					|
+					<li> <a href= "care_instructions.html">Care Instructions</a> </li>
+					|
+					<li> <a href= "touch_up_kits.html">Touch Up Kits</a> </li>
+					|
+					<li> <a href= "anti_slip_mats.html">Anti Slip Mats</a> </li>
+					|
+					<li> <a href= "drain_kits.html">Drain Kits</a> </li>
+					|
+					<li> <a href= "locations.html">Locations</a> </li>
+					|
+					<li> <a href= "faq.html">FAQs</a> </li>
+					|
+					<li> <a href= "contact_us.html">Contact Us</a> </li>
+					|
+					<li> <a href="business_partners.html">Business Partners</a> </li>
+					|
+					<li> <a href="site_map.html">Site Map</a> </li>
+				</ul>
+				<div id = "footerinfo">
+					<div class = "copyright">
+						<br><br><br>
+						<p> &#169; Copyright 2015 Bath Magic Inc. All Rights Reserved </p>
+					</div>
+					<div class = "lastmod">
+						<br><br><br>
+						<p>Last Modified: 14 June 2015</p>
+					</div>
+					<div class = "address">
+						<p> Corporate Headquarters <br> 
+						120 N. Main St. <br> 
+						Englewood, OH 45322 <br> 
+						Phone: (937) 832-0427 </p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
